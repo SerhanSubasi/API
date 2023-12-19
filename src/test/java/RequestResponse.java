@@ -35,6 +35,13 @@ public class RequestResponse {
         Response response = given().when().get(url);
         response.prettyPrint();     //pretty print ile yazdırılıyor.
 
+        //Status code'a nasıl ulaşılır / yazdırılır:
+        int statusCode = response.statusCode();
+        System.out.println(statusCode);
+
+        //Status code line'ı nasıl ulaşılır / yazdırılır:
+        System.out.println(response.statusLine());
+
     }
 
 
