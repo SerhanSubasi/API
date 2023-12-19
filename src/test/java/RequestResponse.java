@@ -38,9 +38,30 @@ public class RequestResponse {
         //Status code'a nasıl ulaşılır / yazdırılır:
         int statusCode = response.statusCode();
         System.out.println(statusCode);
+        System.out.println("------------------------------------");
 
         //Status code line'ı nasıl ulaşılır / yazdırılır:
         System.out.println(response.statusLine());
+        System.out.println("------------------------------------");
+
+        //ContentType
+        System.out.println(response.contentType());
+        System.out.println("------------------------------------");
+
+
+        //Header nasıl oluşturulur
+        System.out.println(response.header("Server"));
+        System.out.println(response.header("Date"));
+        System.out.println("------------------------------------");
+
+        //Bütün headerlar nasıl alınır:
+        System.out.println(response.headers());
+        System.out.println("------------------------------------");
+
+        //Response süresini çağırma:
+        System.out.println(response.time());
+        System.out.println("------------------------------------");
+
 
     }
 
