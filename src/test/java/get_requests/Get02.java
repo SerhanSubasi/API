@@ -43,7 +43,7 @@ public class Get02 {
 
         Assert.assertTrue(responseStr.contains("Not Found"));
 
-        Assert.assertFalse(responseStr.contains("Techproed"));
+        Assert.assertFalse(responseStr.contains("TechProEd"));
 
         String server = response.header("Server");
         Assert.assertEquals("Cowboy",server);
