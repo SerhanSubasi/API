@@ -10,8 +10,8 @@ public class JsonPlaceHolderBaseUrl {
 
     @Before
     public void setUp() {
-        String url = "https://jsonplaceholder.typicode.com/todos/23";
-        spec = new RequestSpecBuilder().setBaseUri(url).build();
+        String baseUrl = "https://jsonplaceholder.typicode.com";
+        spec = new RequestSpecBuilder().setBaseUri(baseUrl).build();
     }
 
 }
